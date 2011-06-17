@@ -1,0 +1,21 @@
+//
+//  Element.h
+//  compound
+//
+//  Created by Rinat Enikeev on 6/17/11.
+//  Copyright (c) 2011 f1ne labs. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+@class Compound;
+
+@interface Element : NSManagedObject {
+@private
+}
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * electronPerAtom;
+@property (nonatomic, retain) Compound * compounds;
+
+@end

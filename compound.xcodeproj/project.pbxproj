@@ -7,39 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F378513AB59340030955F /* compound.xcdatamodeld */; };
+		0EC29C7213AB507F003725E2 /* Compound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29C7113AB507F003725E2 /* Compound.m */; };
+		0EC29C7613AB5093003725E2 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29C7513AB5093003725E2 /* Element.m */; };
 		0ECC3B4413AA40CA009ED496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4313AA40CA009ED496 /* UIKit.framework */; };
 		0ECC3B4613AA40CA009ED496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4513AA40CA009ED496 /* Foundation.framework */; };
 		0ECC3B4813AA40CA009ED496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4713AA40CA009ED496 /* CoreGraphics.framework */; };
 		0ECC3B4A13AA40CA009ED496 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4913AA40CA009ED496 /* CoreData.framework */; };
 		0ECC3B5013AA40CA009ED496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B4E13AA40CA009ED496 /* InfoPlist.strings */; };
-		0ECC3B5313AA40CA009ED496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5213AA40CA009ED496 /* main.m */; };
-		0ECC3B5613AA40CA009ED496 /* compoundAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.m */; };
-		0ECC3B5913AA40CA009ED496 /* compound.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5713AA40CA009ED496 /* compound.xcdatamodeld */; };
+		0ECC3B5313AA40CA009ED496 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5213AA40CA009ED496 /* main.mm */; };
+		0ECC3B5613AA40CA009ED496 /* compoundAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */; };
 		0ECC3B5C13AA40CA009ED496 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */; };
-		0ECC3B5F13AA40CA009ED496 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5E13AA40CA009ED496 /* DetailViewController.m */; };
+		0ECC3B5F13AA40CA009ED496 /* DetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */; };
 		0ECC3B6213AA40CA009ED496 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B6013AA40CA009ED496 /* DetailView.xib */; };
-		0ECC3B6513AA40CA009ED496 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B6413AA40CA009ED496 /* RootViewController.m */; };
+		0ECC3B6513AA40CA009ED496 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B6413AA40CA009ED496 /* RootViewController.mm */; };
+		0ECC3B6D13AA4340009ED496 /* FLGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B6C13AA4340009ED496 /* FLGLView.mm */; };
+		0ECC3B7C13AA44C8009ED496 /* ResourceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B7913AA44C8009ED496 /* ResourceManager.mm */; };
+		0ECC3B7D13AA44C8009ED496 /* ApplicationEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B7A13AA44C8009ED496 /* ApplicationEngine.cpp */; };
+		0ECC3B7E13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B7B13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp */; };
+		0ECC3B8913AA45B7009ED496 /* FLText3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3B8813AA45B7009ED496 /* FLText3D.cpp */; };
+		0ECC3B9713AA45DA009ED496 /* lowCaseLettersTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B8C13AA45DA009ED496 /* lowCaseLettersTexture.png */; };
+		0ECC3B9813AA45DA009ED496 /* GenerateDistanceField.py in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B8E13AA45DA009ED496 /* GenerateDistanceField.py */; };
+		0ECC3B9913AA45DA009ED496 /* Grid16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B8F13AA45DA009ED496 /* Grid16.png */; };
+		0ECC3B9A13AA45DA009ED496 /* earth.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9013AA45DA009ED496 /* earth.pvr */; };
+		0ECC3B9B13AA45DA009ED496 /* Grid16.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9113AA45DA009ED496 /* Grid16.pvr */; };
+		0ECC3B9C13AA45DA009ED496 /* tetrasmall.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9213AA45DA009ED496 /* tetrasmall.pvr */; };
+		0ECC3B9D13AA45DA009ED496 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9313AA45DA009ED496 /* earth.png */; };
+		0ECC3B9E13AA45DA009ED496 /* tetrasmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9413AA45DA009ED496 /* tetrasmall.png */; };
+		0ECC3B9F13AA45DA009ED496 /* NumeralsTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9513AA45DA009ED496 /* NumeralsTexture.png */; };
+		0ECC3BA013AA45DA009ED496 /* CreateNumerals.py in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3B9613AA45DA009ED496 /* CreateNumerals.py */; };
+		0ECC3BA413AA45F7009ED496 /* FragmentShader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BA213AA45F7009ED496 /* FragmentShader.frag */; };
+		0ECC3BA513AA45F7009ED496 /* VertexShader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BA313AA45F7009ED496 /* VertexShader.vert */; };
+		0ECC3BAD13AA461D009ED496 /* FLTetrahedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BA813AA461D009ED496 /* FLTetrahedron.cpp */; };
+		0ECC3BAE13AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BAA13AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.cpp */; };
+		0ECC3BAF13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BAC13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.cpp */; };
+		0ECC3BB313AA4671009ED496 /* FLCompound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BB213AA4671009ED496 /* FLCompound.cpp */; };
+		0ECC3BB713AA4688009ED496 /* FLQuaternaryCompound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BB613AA4688009ED496 /* FLQuaternaryCompound.cpp */; };
+		0ECC3BBA13AA4699009ED496 /* nimninco.ABCD in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC3BB913AA4699009ED496 /* nimninco.ABCD */; };
+		0ECC3BBE13AA46B6009ED496 /* FLChemicalElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC3BBD13AA46B6009ED496 /* FLChemicalElement.cpp */; };
+		0ECC3BC013AA470A009ED496 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3BBF13AA470A009ED496 /* OpenGLES.framework */; };
+		0ECC3BC213AA4722009ED496 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3BC113AA4722009ED496 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0ECC3B3F13AA40CA009ED496 /* compound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = compound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9F378613AB59340030955F /* compound.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = compound.xcdatamodel; sourceTree = "<group>"; };
+		0EC29C4B13AB446E003725E2 /* compound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = compound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EC29C7013AB507F003725E2 /* Compound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compound.h; sourceTree = "<group>"; };
+		0EC29C7113AB507F003725E2 /* Compound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compound.m; sourceTree = "<group>"; };
+		0EC29C7413AB5093003725E2 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		0EC29C7513AB5093003725E2 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
 		0ECC3B4313AA40CA009ED496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0ECC3B4513AA40CA009ED496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ECC3B4713AA40CA009ED496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0ECC3B4913AA40CA009ED496 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */ = {isa = PBXFileReference; path = "compound-Info.plist"; sourceTree = "<group>"; };
+		0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "compound-Info.plist"; path = "compound/compound-Info.plist"; sourceTree = "<group>"; };
 		0ECC3B4F13AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */ = {isa = PBXFileReference; path = "compound-Prefix.pch"; sourceTree = "<group>"; };
-		0ECC3B5213AA40CA009ED496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */ = {isa = PBXFileReference; path = compoundAppDelegate.h; sourceTree = "<group>"; };
-		0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = compoundAppDelegate.m; sourceTree = "<group>"; };
-		0ECC3B5813AA40CA009ED496 /* compound.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = compound.xcdatamodel; sourceTree = "<group>"; };
+		0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "compound-Prefix.pch"; path = "compound/compound-Prefix.pch"; sourceTree = "<group>"; };
+		0ECC3B5213AA40CA009ED496 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = compound/main.mm; sourceTree = "<group>"; };
+		0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compoundAppDelegate.h; path = compound/compoundAppDelegate.h; sourceTree = "<group>"; };
+		0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = compoundAppDelegate.mm; path = compound/compoundAppDelegate.mm; sourceTree = "<group>"; };
 		0ECC3B5B13AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		0ECC3B5E13AA40CA009ED496 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = compound/DetailViewController.h; sourceTree = "<group>"; };
+		0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DetailViewController.mm; path = compound/DetailViewController.mm; sourceTree = "<group>"; };
 		0ECC3B6113AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		0ECC3B6313AA40CA009ED496 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
-		0ECC3B6413AA40CA009ED496 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0ECC3B6313AA40CA009ED496 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = compound/RootViewController.h; sourceTree = "<group>"; };
+		0ECC3B6413AA40CA009ED496 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = compound/RootViewController.mm; sourceTree = "<group>"; };
+		0ECC3B6B13AA4340009ED496 /* FLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLGLView.h; sourceTree = "<group>"; };
+		0ECC3B6C13AA4340009ED496 /* FLGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FLGLView.mm; sourceTree = "<group>"; };
+		0ECC3B7813AA44C8009ED496 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Interfaces.hpp; sourceTree = "<group>"; };
+		0ECC3B7913AA44C8009ED496 /* ResourceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourceManager.mm; sourceTree = "<group>"; };
+		0ECC3B7A13AA44C8009ED496 /* ApplicationEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationEngine.cpp; sourceTree = "<group>"; };
+		0ECC3B7B13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine.SolidES2.cpp; sourceTree = "<group>"; };
+		0ECC3B8013AA44FF009ED496 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		0ECC3B8113AA44FF009ED496 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		0ECC3B8213AA44FF009ED496 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		0ECC3B8413AA458B009ED496 /* PVRTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTGlobal.h; sourceTree = "<group>"; };
+		0ECC3B8513AA458B009ED496 /* PVRTTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTexture.h; sourceTree = "<group>"; };
+		0ECC3B8713AA45B7009ED496 /* FLText3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLText3D.hpp; sourceTree = "<group>"; };
+		0ECC3B8813AA45B7009ED496 /* FLText3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLText3D.cpp; sourceTree = "<group>"; };
+		0ECC3B8B13AA45DA009ED496 /* lowCaseLettersTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lowCaseLettersTexture.h; sourceTree = "<group>"; };
+		0ECC3B8C13AA45DA009ED496 /* lowCaseLettersTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowCaseLettersTexture.png; sourceTree = "<group>"; };
+		0ECC3B8D13AA45DA009ED496 /* NumeralsTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumeralsTexture.h; sourceTree = "<group>"; };
+		0ECC3B8E13AA45DA009ED496 /* GenerateDistanceField.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = GenerateDistanceField.py; sourceTree = "<group>"; };
+		0ECC3B8F13AA45DA009ED496 /* Grid16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grid16.png; sourceTree = "<group>"; };
+		0ECC3B9013AA45DA009ED496 /* earth.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = earth.pvr; sourceTree = "<group>"; };
+		0ECC3B9113AA45DA009ED496 /* Grid16.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Grid16.pvr; sourceTree = "<group>"; };
+		0ECC3B9213AA45DA009ED496 /* tetrasmall.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tetrasmall.pvr; sourceTree = "<group>"; };
+		0ECC3B9313AA45DA009ED496 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		0ECC3B9413AA45DA009ED496 /* tetrasmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tetrasmall.png; sourceTree = "<group>"; };
+		0ECC3B9513AA45DA009ED496 /* NumeralsTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NumeralsTexture.png; sourceTree = "<group>"; };
+		0ECC3B9613AA45DA009ED496 /* CreateNumerals.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = CreateNumerals.py; sourceTree = "<group>"; };
+		0ECC3BA213AA45F7009ED496 /* FragmentShader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragmentShader.frag; sourceTree = "<group>"; };
+		0ECC3BA313AA45F7009ED496 /* VertexShader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexShader.vert; sourceTree = "<group>"; };
+		0ECC3BA713AA461D009ED496 /* FLTetrahedron.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLTetrahedron.hpp; sourceTree = "<group>"; };
+		0ECC3BA813AA461D009ED496 /* FLTetrahedron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLTetrahedron.cpp; sourceTree = "<group>"; };
+		0ECC3BA913AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLTetrahedronWithBoundsDivisions.hpp; sourceTree = "<group>"; };
+		0ECC3BAA13AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLTetrahedronWithBoundsDivisions.cpp; sourceTree = "<group>"; };
+		0ECC3BAB13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLTetrahedronQuaternaryPhaseDiagram.hpp; sourceTree = "<group>"; };
+		0ECC3BAC13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLTetrahedronQuaternaryPhaseDiagram.cpp; sourceTree = "<group>"; };
+		0ECC3BB113AA4671009ED496 /* FLCompound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLCompound.hpp; sourceTree = "<group>"; };
+		0ECC3BB213AA4671009ED496 /* FLCompound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLCompound.cpp; sourceTree = "<group>"; };
+		0ECC3BB513AA4688009ED496 /* FLQuaternaryCompound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLQuaternaryCompound.hpp; sourceTree = "<group>"; };
+		0ECC3BB613AA4688009ED496 /* FLQuaternaryCompound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLQuaternaryCompound.cpp; sourceTree = "<group>"; };
+		0ECC3BB913AA4699009ED496 /* nimninco.ABCD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nimninco.ABCD; sourceTree = "<group>"; };
+		0ECC3BBC13AA46B6009ED496 /* FLChemicalElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FLChemicalElement.hpp; sourceTree = "<group>"; };
+		0ECC3BBD13AA46B6009ED496 /* FLChemicalElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FLChemicalElement.cpp; sourceTree = "<group>"; };
+		0ECC3BBF13AA470A009ED496 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0ECC3BC113AA4722009ED496 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECC3BC213AA4722009ED496 /* QuartzCore.framework in Frameworks */,
+				0ECC3BC013AA470A009ED496 /* OpenGLES.framework in Frameworks */,
 				0ECC3B4413AA40CA009ED496 /* UIKit.framework in Frameworks */,
 				0ECC3B4613AA40CA009ED496 /* Foundation.framework in Frameworks */,
 				0ECC3B4813AA40CA009ED496 /* CoreGraphics.framework in Frameworks */,
@@ -57,10 +133,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC29C6713AB4A1C003725E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EC29C7413AB5093003725E2 /* Element.h */,
+				0EC29C7513AB5093003725E2 /* Element.m */,
+				0EC29C7013AB507F003725E2 /* Compound.h */,
+				0EC29C7113AB507F003725E2 /* Compound.m */,
+				0E9F378513AB59340030955F /* compound.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0ECC3B3413AA40CA009ED496 = {
 			isa = PBXGroup;
 			children = (
-				0ECC3B4B13AA40CA009ED496 /* compound */,
+				0ECC3B7713AA43EF009ED496 /* C++ */,
+				0ECC3B7613AA43E0009ED496 /* Objective C */,
 				0ECC3B4213AA40CA009ED496 /* Frameworks */,
 				0ECC3B4013AA40CA009ED496 /* Products */,
 			);
@@ -69,7 +158,7 @@
 		0ECC3B4013AA40CA009ED496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ECC3B3F13AA40CA009ED496 /* compound.app */,
+				0EC29C4B13AB446E003725E2 /* compound.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +166,8 @@
 		0ECC3B4213AA40CA009ED496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0ECC3BC113AA4722009ED496 /* QuartzCore.framework */,
+				0ECC3BBF13AA470A009ED496 /* OpenGLES.framework */,
 				0ECC3B4313AA40CA009ED496 /* UIKit.framework */,
 				0ECC3B4513AA40CA009ED496 /* Foundation.framework */,
 				0ECC3B4713AA40CA009ED496 /* CoreGraphics.framework */,
@@ -88,16 +179,6 @@
 		0ECC3B4B13AA40CA009ED496 /* compound */ = {
 			isa = PBXGroup;
 			children = (
-				0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */,
-				0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.m */,
-				0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */,
-				0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */,
-				0ECC3B5E13AA40CA009ED496 /* DetailViewController.m */,
-				0ECC3B6013AA40CA009ED496 /* DetailView.xib */,
-				0ECC3B6313AA40CA009ED496 /* RootViewController.h */,
-				0ECC3B6413AA40CA009ED496 /* RootViewController.m */,
-				0ECC3B5713AA40CA009ED496 /* compound.xcdatamodeld */,
-				0ECC3B4C13AA40CA009ED496 /* Supporting Files */,
 			);
 			path = compound;
 			sourceTree = "<group>";
@@ -105,12 +186,167 @@
 		0ECC3B4C13AA40CA009ED496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = "Supporting Files";
+			path = compound;
+			sourceTree = "<group>";
+		};
+		0ECC3B7613AA43E0009ED496 /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				0EC29C6713AB4A1C003725E2 /* Model */,
+				0ECC3BCB13AA49E6009ED496 /* GL */,
+				0ECC3B4B13AA40CA009ED496 /* compound */,
+				0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */,
+				0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */,
+				0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */,
+				0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */,
+				0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */,
+				0ECC3B6013AA40CA009ED496 /* DetailView.xib */,
+				0ECC3B6313AA40CA009ED496 /* RootViewController.h */,
+				0ECC3B6413AA40CA009ED496 /* RootViewController.mm */,
+				0ECC3B4C13AA40CA009ED496 /* Supporting Files */,
 				0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */,
 				0ECC3B4E13AA40CA009ED496 /* InfoPlist.strings */,
 				0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */,
-				0ECC3B5213AA40CA009ED496 /* main.m */,
+				0ECC3B5213AA40CA009ED496 /* main.mm */,
 			);
-			name = "Supporting Files";
+			name = "Objective C";
+			sourceTree = "<group>";
+		};
+		0ECC3B7713AA43EF009ED496 /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BBB13AA46A5009ED496 /* Chemical */,
+				0ECC3BB013AA465F009ED496 /* Compounds */,
+				0ECC3BA613AA45FB009ED496 /* Geometry */,
+				0ECC3BA113AA45EE009ED496 /* Shaders */,
+				0ECC3B8A13AA45CE009ED496 /* Textures */,
+				0ECC3B7813AA44C8009ED496 /* Interfaces.hpp */,
+				0ECC3B7913AA44C8009ED496 /* ResourceManager.mm */,
+				0ECC3B7A13AA44C8009ED496 /* ApplicationEngine.cpp */,
+				0ECC3B7B13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp */,
+				0ECC3B7F13AA44E6009ED496 /* Algebra */,
+				0ECC3B8313AA457A009ED496 /* PowerVR */,
+				0ECC3B8613AA45A2009ED496 /* Text */,
+			);
+			name = "C++";
+			sourceTree = "<group>";
+		};
+		0ECC3B7F13AA44E6009ED496 /* Algebra */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3B8013AA44FF009ED496 /* Matrix.hpp */,
+				0ECC3B8113AA44FF009ED496 /* Quaternion.hpp */,
+				0ECC3B8213AA44FF009ED496 /* Vector.hpp */,
+			);
+			name = Algebra;
+			sourceTree = "<group>";
+		};
+		0ECC3B8313AA457A009ED496 /* PowerVR */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3B8413AA458B009ED496 /* PVRTGlobal.h */,
+				0ECC3B8513AA458B009ED496 /* PVRTTexture.h */,
+			);
+			name = PowerVR;
+			sourceTree = "<group>";
+		};
+		0ECC3B8613AA45A2009ED496 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3B8713AA45B7009ED496 /* FLText3D.hpp */,
+				0ECC3B8813AA45B7009ED496 /* FLText3D.cpp */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		0ECC3B8A13AA45CE009ED496 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3B8B13AA45DA009ED496 /* lowCaseLettersTexture.h */,
+				0ECC3B8C13AA45DA009ED496 /* lowCaseLettersTexture.png */,
+				0ECC3B8D13AA45DA009ED496 /* NumeralsTexture.h */,
+				0ECC3B8E13AA45DA009ED496 /* GenerateDistanceField.py */,
+				0ECC3B8F13AA45DA009ED496 /* Grid16.png */,
+				0ECC3B9013AA45DA009ED496 /* earth.pvr */,
+				0ECC3B9113AA45DA009ED496 /* Grid16.pvr */,
+				0ECC3B9213AA45DA009ED496 /* tetrasmall.pvr */,
+				0ECC3B9313AA45DA009ED496 /* earth.png */,
+				0ECC3B9413AA45DA009ED496 /* tetrasmall.png */,
+				0ECC3B9513AA45DA009ED496 /* NumeralsTexture.png */,
+				0ECC3B9613AA45DA009ED496 /* CreateNumerals.py */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		0ECC3BA113AA45EE009ED496 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BA213AA45F7009ED496 /* FragmentShader.frag */,
+				0ECC3BA313AA45F7009ED496 /* VertexShader.vert */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		0ECC3BA613AA45FB009ED496 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BA713AA461D009ED496 /* FLTetrahedron.hpp */,
+				0ECC3BA813AA461D009ED496 /* FLTetrahedron.cpp */,
+				0ECC3BA913AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.hpp */,
+				0ECC3BAA13AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.cpp */,
+				0ECC3BAB13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.hpp */,
+				0ECC3BAC13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.cpp */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		0ECC3BB013AA465F009ED496 /* Compounds */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BB413AA4674009ED496 /* QuaternaryCompounds */,
+				0ECC3BB113AA4671009ED496 /* FLCompound.hpp */,
+				0ECC3BB213AA4671009ED496 /* FLCompound.cpp */,
+			);
+			name = Compounds;
+			sourceTree = "<group>";
+		};
+		0ECC3BB413AA4674009ED496 /* QuaternaryCompounds */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BB813AA468B009ED496 /* InputFiles */,
+				0ECC3BB513AA4688009ED496 /* FLQuaternaryCompound.hpp */,
+				0ECC3BB613AA4688009ED496 /* FLQuaternaryCompound.cpp */,
+			);
+			name = QuaternaryCompounds;
+			sourceTree = "<group>";
+		};
+		0ECC3BB813AA468B009ED496 /* InputFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BB913AA4699009ED496 /* nimninco.ABCD */,
+			);
+			name = InputFiles;
+			sourceTree = "<group>";
+		};
+		0ECC3BBB13AA46A5009ED496 /* Chemical */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3BBC13AA46B6009ED496 /* FLChemicalElement.hpp */,
+				0ECC3BBD13AA46B6009ED496 /* FLChemicalElement.cpp */,
+			);
+			name = Chemical;
+			sourceTree = "<group>";
+		};
+		0ECC3BCB13AA49E6009ED496 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC3B6B13AA4340009ED496 /* FLGLView.h */,
+				0ECC3B6C13AA4340009ED496 /* FLGLView.mm */,
+			);
+			name = GL;
+			path = compound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +366,7 @@
 			);
 			name = compound;
 			productName = compound;
-			productReference = 0ECC3B3F13AA40CA009ED496 /* compound.app */;
+			productReference = 0EC29C4B13AB446E003725E2 /* compound.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +402,17 @@
 				0ECC3B5013AA40CA009ED496 /* InfoPlist.strings in Resources */,
 				0ECC3B5C13AA40CA009ED496 /* MainWindow.xib in Resources */,
 				0ECC3B6213AA40CA009ED496 /* DetailView.xib in Resources */,
+				0ECC3B9713AA45DA009ED496 /* lowCaseLettersTexture.png in Resources */,
+				0ECC3B9813AA45DA009ED496 /* GenerateDistanceField.py in Resources */,
+				0ECC3B9913AA45DA009ED496 /* Grid16.png in Resources */,
+				0ECC3B9A13AA45DA009ED496 /* earth.pvr in Resources */,
+				0ECC3B9B13AA45DA009ED496 /* Grid16.pvr in Resources */,
+				0ECC3B9C13AA45DA009ED496 /* tetrasmall.pvr in Resources */,
+				0ECC3B9D13AA45DA009ED496 /* earth.png in Resources */,
+				0ECC3B9E13AA45DA009ED496 /* tetrasmall.png in Resources */,
+				0ECC3B9F13AA45DA009ED496 /* NumeralsTexture.png in Resources */,
+				0ECC3BA013AA45DA009ED496 /* CreateNumerals.py in Resources */,
+				0ECC3BBA13AA4699009ED496 /* nimninco.ABCD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,11 +423,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ECC3B5313AA40CA009ED496 /* main.m in Sources */,
-				0ECC3B5613AA40CA009ED496 /* compoundAppDelegate.m in Sources */,
-				0ECC3B5913AA40CA009ED496 /* compound.xcdatamodeld in Sources */,
-				0ECC3B5F13AA40CA009ED496 /* DetailViewController.m in Sources */,
-				0ECC3B6513AA40CA009ED496 /* RootViewController.m in Sources */,
+				0ECC3B5313AA40CA009ED496 /* main.mm in Sources */,
+				0ECC3B5613AA40CA009ED496 /* compoundAppDelegate.mm in Sources */,
+				0ECC3B5F13AA40CA009ED496 /* DetailViewController.mm in Sources */,
+				0ECC3B6513AA40CA009ED496 /* RootViewController.mm in Sources */,
+				0ECC3B6D13AA4340009ED496 /* FLGLView.mm in Sources */,
+				0ECC3B7C13AA44C8009ED496 /* ResourceManager.mm in Sources */,
+				0ECC3B7D13AA44C8009ED496 /* ApplicationEngine.cpp in Sources */,
+				0ECC3B7E13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp in Sources */,
+				0ECC3B8913AA45B7009ED496 /* FLText3D.cpp in Sources */,
+				0ECC3BA413AA45F7009ED496 /* FragmentShader.frag in Sources */,
+				0ECC3BA513AA45F7009ED496 /* VertexShader.vert in Sources */,
+				0ECC3BAD13AA461D009ED496 /* FLTetrahedron.cpp in Sources */,
+				0ECC3BAE13AA461D009ED496 /* FLTetrahedronWithBoundsDivisions.cpp in Sources */,
+				0ECC3BAF13AA461D009ED496 /* FLTetrahedronQuaternaryPhaseDiagram.cpp in Sources */,
+				0ECC3BB313AA4671009ED496 /* FLCompound.cpp in Sources */,
+				0ECC3BB713AA4688009ED496 /* FLQuaternaryCompound.cpp in Sources */,
+				0ECC3BBE13AA46B6009ED496 /* FLChemicalElement.cpp in Sources */,
+				0EC29C7213AB507F003725E2 /* Compound.m in Sources */,
+				0EC29C7613AB5093003725E2 /* Element.m in Sources */,
+				0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +455,7 @@
 				0ECC3B4F13AA40CA009ED496 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = compound;
 			sourceTree = "<group>";
 		};
 		0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */ = {
@@ -201,6 +464,7 @@
 				0ECC3B5B13AA40CA009ED496 /* en */,
 			);
 			name = MainWindow.xib;
+			path = compound;
 			sourceTree = "<group>";
 		};
 		0ECC3B6013AA40CA009ED496 /* DetailView.xib */ = {
@@ -209,6 +473,7 @@
 				0ECC3B6113AA40CA009ED496 /* en */,
 			);
 			name = DetailView.xib;
+			path = compound;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,16 +560,17 @@
 				0ECC3B6A13AA40CA009ED496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0ECC3B5713AA40CA009ED496 /* compound.xcdatamodeld */ = {
+		0E9F378513AB59340030955F /* compound.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0ECC3B5813AA40CA009ED496 /* compound.xcdatamodel */,
+				0E9F378613AB59340030955F /* compound.xcdatamodel */,
 			);
-			currentVersion = 0ECC3B5813AA40CA009ED496 /* compound.xcdatamodel */;
+			currentVersion = 0E9F378613AB59340030955F /* compound.xcdatamodel */;
 			path = compound.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
