@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E96964413B21A9C00FCFAC8 /* InsertCompoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E96964213B21A9C00FCFAC8 /* InsertCompoundViewController.m */; };
+		0E96964513B21A9C00FCFAC8 /* InsertCompoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E96964313B21A9C00FCFAC8 /* InsertCompoundViewController.xib */; };
+		0E96964913B2219100FCFAC8 /* Compound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E96964813B2219100FCFAC8 /* Compound.m */; };
 		0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F378513AB59340030955F /* compound.xcdatamodeld */; };
-		0EC29C7213AB507F003725E2 /* Compound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29C7113AB507F003725E2 /* Compound.m */; };
-		0EC29C7613AB5093003725E2 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29C7513AB5093003725E2 /* Element.m */; };
+		0EB338EC13AF4F6800EFE364 /* CompoundSystemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB338EB13AF4F6800EFE364 /* CompoundSystemTableViewController.m */; };
 		0ECC3B4413AA40CA009ED496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4313AA40CA009ED496 /* UIKit.framework */; };
 		0ECC3B4613AA40CA009ED496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4513AA40CA009ED496 /* Foundation.framework */; };
 		0ECC3B4813AA40CA009ED496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4713AA40CA009ED496 /* CoreGraphics.framework */; };
@@ -50,28 +52,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E96964113B21A9C00FCFAC8 /* InsertCompoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertCompoundViewController.h; sourceTree = "<group>"; };
+		0E96964213B21A9C00FCFAC8 /* InsertCompoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertCompoundViewController.m; sourceTree = "<group>"; };
+		0E96964313B21A9C00FCFAC8 /* InsertCompoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertCompoundViewController.xib; sourceTree = "<group>"; };
+		0E96964713B2219100FCFAC8 /* Compound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compound.h; sourceTree = "<group>"; };
+		0E96964813B2219100FCFAC8 /* Compound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compound.m; sourceTree = "<group>"; };
 		0E9F378613AB59340030955F /* compound.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = compound.xcdatamodel; sourceTree = "<group>"; };
+		0EB338EA13AF4F6700EFE364 /* CompoundSystemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundSystemTableViewController.h; sourceTree = "<group>"; };
+		0EB338EB13AF4F6800EFE364 /* CompoundSystemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundSystemTableViewController.m; sourceTree = "<group>"; };
 		0EC29C4B13AB446E003725E2 /* compound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = compound.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EC29C7013AB507F003725E2 /* Compound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compound.h; sourceTree = "<group>"; };
-		0EC29C7113AB507F003725E2 /* Compound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compound.m; sourceTree = "<group>"; };
-		0EC29C7413AB5093003725E2 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
-		0EC29C7513AB5093003725E2 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
 		0ECC3B4313AA40CA009ED496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0ECC3B4513AA40CA009ED496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ECC3B4713AA40CA009ED496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0ECC3B4913AA40CA009ED496 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "compound-Info.plist"; path = "compound/compound-Info.plist"; sourceTree = "<group>"; };
+		0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "compound-Info.plist"; sourceTree = "<group>"; };
 		0ECC3B4F13AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "compound-Prefix.pch"; path = "compound/compound-Prefix.pch"; sourceTree = "<group>"; };
-		0ECC3B5213AA40CA009ED496 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = compound/main.mm; sourceTree = "<group>"; };
-		0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compoundAppDelegate.h; path = compound/compoundAppDelegate.h; sourceTree = "<group>"; };
-		0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = compoundAppDelegate.mm; path = compound/compoundAppDelegate.mm; sourceTree = "<group>"; };
+		0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "compound-Prefix.pch"; sourceTree = "<group>"; };
+		0ECC3B5213AA40CA009ED496 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compoundAppDelegate.h; sourceTree = "<group>"; };
+		0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = compoundAppDelegate.mm; sourceTree = "<group>"; };
 		0ECC3B5B13AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = compound/DetailViewController.h; sourceTree = "<group>"; };
-		0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DetailViewController.mm; path = compound/DetailViewController.mm; sourceTree = "<group>"; };
+		0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DetailViewController.mm; sourceTree = "<group>"; };
 		0ECC3B6113AA40CA009ED496 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		0ECC3B6313AA40CA009ED496 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = compound/RootViewController.h; sourceTree = "<group>"; };
-		0ECC3B6413AA40CA009ED496 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = compound/RootViewController.mm; sourceTree = "<group>"; };
+		0ECC3B6313AA40CA009ED496 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0ECC3B6413AA40CA009ED496 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
 		0ECC3B6B13AA4340009ED496 /* FLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLGLView.h; sourceTree = "<group>"; };
 		0ECC3B6C13AA4340009ED496 /* FLGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FLGLView.mm; sourceTree = "<group>"; };
 		0ECC3B7813AA44C8009ED496 /* Interfaces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Interfaces.hpp; sourceTree = "<group>"; };
@@ -136,11 +141,9 @@
 		0EC29C6713AB4A1C003725E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0EC29C7413AB5093003725E2 /* Element.h */,
-				0EC29C7513AB5093003725E2 /* Element.m */,
-				0EC29C7013AB507F003725E2 /* Compound.h */,
-				0EC29C7113AB507F003725E2 /* Compound.m */,
 				0E9F378513AB59340030955F /* compound.xcdatamodeld */,
+				0E96964713B2219100FCFAC8 /* Compound.h */,
+				0E96964813B2219100FCFAC8 /* Compound.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,19 @@
 		0ECC3B4B13AA40CA009ED496 /* compound */ = {
 			isa = PBXGroup;
 			children = (
+				0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */,
+				0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */,
+				0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */,
+				0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */,
+				0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */,
+				0ECC3B6013AA40CA009ED496 /* DetailView.xib */,
+				0ECC3B6313AA40CA009ED496 /* RootViewController.h */,
+				0ECC3B6413AA40CA009ED496 /* RootViewController.mm */,
+				0EB338EA13AF4F6700EFE364 /* CompoundSystemTableViewController.h */,
+				0EB338EB13AF4F6800EFE364 /* CompoundSystemTableViewController.m */,
+				0E96964113B21A9C00FCFAC8 /* InsertCompoundViewController.h */,
+				0E96964213B21A9C00FCFAC8 /* InsertCompoundViewController.m */,
+				0E96964313B21A9C00FCFAC8 /* InsertCompoundViewController.xib */,
 			);
 			path = compound;
 			sourceTree = "<group>";
@@ -186,6 +202,10 @@
 		0ECC3B4C13AA40CA009ED496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */,
+				0ECC3B4E13AA40CA009ED496 /* InfoPlist.strings */,
+				0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */,
+				0ECC3B5213AA40CA009ED496 /* main.mm */,
 			);
 			name = "Supporting Files";
 			path = compound;
@@ -197,19 +217,7 @@
 				0EC29C6713AB4A1C003725E2 /* Model */,
 				0ECC3BCB13AA49E6009ED496 /* GL */,
 				0ECC3B4B13AA40CA009ED496 /* compound */,
-				0ECC3B5413AA40CA009ED496 /* compoundAppDelegate.h */,
-				0ECC3B5513AA40CA009ED496 /* compoundAppDelegate.mm */,
-				0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */,
-				0ECC3B5D13AA40CA009ED496 /* DetailViewController.h */,
-				0ECC3B5E13AA40CA009ED496 /* DetailViewController.mm */,
-				0ECC3B6013AA40CA009ED496 /* DetailView.xib */,
-				0ECC3B6313AA40CA009ED496 /* RootViewController.h */,
-				0ECC3B6413AA40CA009ED496 /* RootViewController.mm */,
 				0ECC3B4C13AA40CA009ED496 /* Supporting Files */,
-				0ECC3B4D13AA40CA009ED496 /* compound-Info.plist */,
-				0ECC3B4E13AA40CA009ED496 /* InfoPlist.strings */,
-				0ECC3B5113AA40CA009ED496 /* compound-Prefix.pch */,
-				0ECC3B5213AA40CA009ED496 /* main.mm */,
 			);
 			name = "Objective C";
 			sourceTree = "<group>";
@@ -217,15 +225,15 @@
 		0ECC3B7713AA43EF009ED496 /* C++ */ = {
 			isa = PBXGroup;
 			children = (
+				0ECC3B7813AA44C8009ED496 /* Interfaces.hpp */,
+				0ECC3B7913AA44C8009ED496 /* ResourceManager.mm */,
+				0ECC3B7A13AA44C8009ED496 /* ApplicationEngine.cpp */,
+				0ECC3B7B13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp */,
 				0ECC3BBB13AA46A5009ED496 /* Chemical */,
 				0ECC3BB013AA465F009ED496 /* Compounds */,
 				0ECC3BA613AA45FB009ED496 /* Geometry */,
 				0ECC3BA113AA45EE009ED496 /* Shaders */,
 				0ECC3B8A13AA45CE009ED496 /* Textures */,
-				0ECC3B7813AA44C8009ED496 /* Interfaces.hpp */,
-				0ECC3B7913AA44C8009ED496 /* ResourceManager.mm */,
-				0ECC3B7A13AA44C8009ED496 /* ApplicationEngine.cpp */,
-				0ECC3B7B13AA44C8009ED496 /* RenderingEngine.SolidES2.cpp */,
 				0ECC3B7F13AA44E6009ED496 /* Algebra */,
 				0ECC3B8313AA457A009ED496 /* PowerVR */,
 				0ECC3B8613AA45A2009ED496 /* Text */,
@@ -413,6 +421,7 @@
 				0ECC3B9F13AA45DA009ED496 /* NumeralsTexture.png in Resources */,
 				0ECC3BA013AA45DA009ED496 /* CreateNumerals.py in Resources */,
 				0ECC3BBA13AA4699009ED496 /* nimninco.ABCD in Resources */,
+				0E96964513B21A9C00FCFAC8 /* InsertCompoundViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,9 +449,10 @@
 				0ECC3BB313AA4671009ED496 /* FLCompound.cpp in Sources */,
 				0ECC3BB713AA4688009ED496 /* FLQuaternaryCompound.cpp in Sources */,
 				0ECC3BBE13AA46B6009ED496 /* FLChemicalElement.cpp in Sources */,
-				0EC29C7213AB507F003725E2 /* Compound.m in Sources */,
-				0EC29C7613AB5093003725E2 /* Element.m in Sources */,
 				0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */,
+				0EB338EC13AF4F6800EFE364 /* CompoundSystemTableViewController.m in Sources */,
+				0E96964413B21A9C00FCFAC8 /* InsertCompoundViewController.m in Sources */,
+				0E96964913B2219100FCFAC8 /* Compound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +465,6 @@
 				0ECC3B4F13AA40CA009ED496 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = compound;
 			sourceTree = "<group>";
 		};
 		0ECC3B5A13AA40CA009ED496 /* MainWindow.xib */ = {
@@ -464,7 +473,6 @@
 				0ECC3B5B13AA40CA009ED496 /* en */,
 			);
 			name = MainWindow.xib;
-			path = compound;
 			sourceTree = "<group>";
 		};
 		0ECC3B6013AA40CA009ED496 /* DetailView.xib */ = {
@@ -473,7 +481,6 @@
 				0ECC3B6113AA40CA009ED496 /* en */,
 			);
 			name = DetailView.xib;
-			path = compound;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

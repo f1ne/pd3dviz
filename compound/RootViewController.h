@@ -11,6 +11,8 @@
 @class DetailViewController;
 
 #import <CoreData/CoreData.h>
+#import "CompoundSystemTableViewController.h"
+#import "InsertCompoundViewController.h"
 
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
 
@@ -21,7 +23,8 @@
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) CompoundSystemTableViewController *compoundListViewController;
 
-- (void)insertNewObject:(id)sender;
+- (void)insertNewQuaternaryCompoundWithElementA:(NSString *)elA fractionA:(NSNumber *)frA elementB:(NSString *)elB fractionB:(NSNumber *)frB elementC:(NSString *) elC fractionC:(NSNumber *)frC elementD:(NSString *)elD fractionD:(NSNumber *)frD;
 
 @end

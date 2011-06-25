@@ -42,9 +42,9 @@
         [self configureView];
 	}
     
-    if (self.popoverController != nil) {
-        [self.popoverController dismissPopoverAnimated:YES];
-    }		
+//    if (self.popoverController != nil) {
+//        [self.popoverController dismissPopoverAnimated:YES];
+//    }		
 }
 
 - (void)configureView
@@ -52,7 +52,7 @@
     // Update the user interface for the detail item.
 
     // Normally should use accessor method, but using KVC here avoids adding a custom class to the template.
-    self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
+    self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"elementA"] description];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -141,7 +141,20 @@
 
 - (IBAction)insertNewObject:(id)sender
 {
-	[self.rootViewController insertNewObject:sender];	
+    // ______________________________________________________________________________
+    // f1ne displaying popoverController for adding Compound
+    
+    InsertCompoundViewController *quaternaryCompoundInsertionViewController = [[InsertCompoundViewController alloc] initWithNibName:nil bundle:nil];
+    
+    quaternaryCompoundInsertionViewController.rootViewController = self.rootViewController;
+    
+    UIPopoverController *popoverInsertCompound = [[UIPopoverController alloc] initWithContentViewController:quaternaryCompoundInsertionViewController];
+    
+    [popoverInsertCompound presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    
+    
+    // ______________________________________________________________________________
+    
 }
 
 @end

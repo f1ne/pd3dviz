@@ -22,11 +22,16 @@
 
 @synthesize managedObjectContext;
 
+@synthesize compoundListViewController;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
-    self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    self.contentSizeForViewInPopover = CGSizeMake(320.0, 400.0);
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    compoundListViewController = [[CompoundSystemTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
     NSError *error = nil;
     if (![[self fetchedResultsController] performFetch:&error]) {
         /*
@@ -130,8 +135,13 @@
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Set the detail item in the detail view controller.
-    NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    detailViewController.detailItem = selectedObject;    
+    NSManagedObject *compoundSystem = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    
+    [self.navigationController pushViewController:compoundListViewController animated:YES];
+
+    //release the viewController, it's now retained automatically by the NavigationController
+    // TODO: pass selected item to FLGLView
+    detailViewController.detailItem = compoundSystem;    
 }
 
 - (void)didReceiveMemoryWarning
@@ -150,6 +160,7 @@
 
 - (void)dealloc
 {
+    [compoundListViewController release];
     [detailViewController release];
     [fetchedResultsController release];
     [managedObjectContext release];
@@ -159,10 +170,21 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     NSManagedObject *managedObject = [fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[managedObject valueForKey:@"name"] description];
+    NSMutableString *compString = [[NSMutableString alloc] initWithString:[[managedObject valueForKey:@"elementA"] description]];
+    [compString appendString:@"-"];
+    
+    [compString appendString:[[managedObject valueForKey:@"elementB"] description]];
+    [compString appendString:@"-"];
+    
+    [compString appendString:[[managedObject valueForKey:@"elementC"] description]];
+    [compString appendString:@"-"];
+    
+    [compString appendString:[[managedObject valueForKey:@"elementD"] description]];
+    
+    cell.textLabel.text = compString;
 }
 
-- (void)insertNewObject:(id)sender
+- (void)insertNewQuaternaryCompoundWithElementA:(NSString *)elA fractionA:(NSNumber *)frA elementB:(NSString *)elB fractionB:(NSNumber *)frB elementC:(NSString *) elC fractionC:(NSNumber *)frC elementD:(NSString *)elD fractionD:(NSNumber *)frD;
 {
     NSIndexPath *currentSelection = [self.tableView indexPathForSelectedRow];
     if (currentSelection != nil) {
@@ -175,7 +197,15 @@
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
     // If appropriate, configure the new managed object.
-    [newManagedObject setValue:@"NiMnIn" forKey:@"name"];
+    [newManagedObject setValue:elA forKey:@"elementA"];
+    [newManagedObject setValue:elB forKey:@"elementB"];
+    [newManagedObject setValue:elC forKey:@"elementC"];
+    [newManagedObject setValue:elD forKey:@"elementD"];
+    
+    [newManagedObject setValue:frA forKey:@"fractionA"];
+    [newManagedObject setValue:frB forKey:@"fractionB"];
+    [newManagedObject setValue:frC forKey:@"fractionC"];
+    [newManagedObject setValue:frD forKey:@"fractionD"];
     
     // Save the context.
     NSError *error = nil;
@@ -215,14 +245,14 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"elementA" ascending:NO];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:@"CompoundSystemxr"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     

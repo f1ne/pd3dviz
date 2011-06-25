@@ -2,7 +2,7 @@
 //  Compound.m
 //  compound
 //
-//  Created by Rinat Enikeev on 6/17/11.
+//  Created by Rinat Enikeev on 6/22/11.
 //  Copyright (c) 2011 f1ne labs. All rights reserved.
 //
 
@@ -10,8 +10,13 @@
 
 
 @implementation Compound
-@dynamic name;
-@dynamic elements;
-
+@dynamic elementA;
+@dynamic elementB;
+@dynamic elementC;
+@dynamic elementD;
+@dynamic fractionA;
+@dynamic fractionB;
+@dynamic fractionC;
+@dynamic fractionD;
 
 @end
