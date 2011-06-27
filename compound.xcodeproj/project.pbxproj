@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E96964413B21A9C00FCFAC8 /* InsertCompoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E96964213B21A9C00FCFAC8 /* InsertCompoundViewController.m */; };
 		0E96964513B21A9C00FCFAC8 /* InsertCompoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E96964313B21A9C00FCFAC8 /* InsertCompoundViewController.xib */; };
-		0E96964913B2219100FCFAC8 /* Compound.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E96964813B2219100FCFAC8 /* Compound.m */; };
 		0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F378513AB59340030955F /* compound.xcdatamodeld */; };
 		0EB338EC13AF4F6800EFE364 /* CompoundSystemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB338EB13AF4F6800EFE364 /* CompoundSystemTableViewController.m */; };
 		0ECC3B4413AA40CA009ED496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECC3B4313AA40CA009ED496 /* UIKit.framework */; };
@@ -55,8 +54,6 @@
 		0E96964113B21A9C00FCFAC8 /* InsertCompoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertCompoundViewController.h; sourceTree = "<group>"; };
 		0E96964213B21A9C00FCFAC8 /* InsertCompoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertCompoundViewController.m; sourceTree = "<group>"; };
 		0E96964313B21A9C00FCFAC8 /* InsertCompoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertCompoundViewController.xib; sourceTree = "<group>"; };
-		0E96964713B2219100FCFAC8 /* Compound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compound.h; sourceTree = "<group>"; };
-		0E96964813B2219100FCFAC8 /* Compound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compound.m; sourceTree = "<group>"; };
 		0E9F378613AB59340030955F /* compound.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = compound.xcdatamodel; sourceTree = "<group>"; };
 		0EB338EA13AF4F6700EFE364 /* CompoundSystemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundSystemTableViewController.h; sourceTree = "<group>"; };
 		0EB338EB13AF4F6800EFE364 /* CompoundSystemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundSystemTableViewController.m; sourceTree = "<group>"; };
@@ -142,8 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				0E9F378513AB59340030955F /* compound.xcdatamodeld */,
-				0E96964713B2219100FCFAC8 /* Compound.h */,
-				0E96964813B2219100FCFAC8 /* Compound.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -452,7 +447,6 @@
 				0E9F378713AB59340030955F /* compound.xcdatamodeld in Sources */,
 				0EB338EC13AF4F6800EFE364 /* CompoundSystemTableViewController.m in Sources */,
 				0E96964413B21A9C00FCFAC8 /* InsertCompoundViewController.m in Sources */,
-				0E96964913B2219100FCFAC8 /* Compound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
